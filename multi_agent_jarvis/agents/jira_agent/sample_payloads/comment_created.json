@@ -1,0 +1,107 @@
+{
+  "timestamp": 1739453103341,
+  "webhookEvent": "comment_created",
+  "comment": {
+    "self": "https://cisco-eti.atlassian.net/rest/api/2/issue/236202/comment/149709",
+    "id": "149709",
+    "author": {
+      "self": "https://cisco-eti.atlassian.net/rest/api/2/user?accountId=633e134d748d1bfcb85c0548",
+      "accountId": "633e134d748d1bfcb85c0548",
+      "avatarUrls": {
+        "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+        "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+        "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+        "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png"
+      },
+      "displayName": "Sri Aradhyula",
+      "active": true,
+      "timeZone": "Etc/GMT",
+      "accountType": "atlassian"
+    },
+    "body": "To create a new GitHub repository, I need some additional information:  1. **Project Name**: Please specify the project associated with the repository. 2. **User Email**: Your email address for notification purposes. 3. **Organization Name**: The organization under which the repository will be created. Defaults to `cisco-eti` if not specified. 4. **Repo Template**: If you want to use a template for the repository, please specify it. Options include `None`, `platform-demo`, `sre-go-helloworld`, `outshift-react-app`.",
+    "updateAuthor": {
+      "self": "https://cisco-eti.atlassian.net/rest/api/2/user?accountId=633e134d748d1bfcb85c0548",
+      "accountId": "633e134d748d1bfcb85c0548",
+      "avatarUrls": {
+        "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+        "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+        "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+        "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png"
+      },
+      "displayName": "Sri Aradhyula",
+      "active": true,
+      "timeZone": "Etc/GMT",
+      "accountType": "atlassian"
+    },
+    "created": "2025-02-13T13:25:03.341+0000",
+    "updated": "2025-02-13T13:25:03.341+0000",
+    "jsdPublic": true
+  },
+  "issue": {
+    "id": "236202",
+    "self": "https://cisco-eti.atlassian.net/rest/api/2/236202",
+    "key": "JARVISDEV-1",
+    "fields": {
+      "summary": "Create a new git repo",
+      "issuetype": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/issuetype/10002",
+        "id": "10002",
+        "description": "A task that needs to be done.",
+        "iconUrl": "https://cisco-eti.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "hierarchyLevel": 0
+      },
+      "project": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/project/10659",
+        "id": "10659",
+        "key": "JARVISDEV",
+        "name": "Jarvis Development",
+        "projectTypeKey": "software",
+        "simplified": false,
+        "avatarUrls": {
+          "48x48": "https://cisco-eti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10417",
+          "24x24": "https://cisco-eti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10417?size=small",
+          "16x16": "https://cisco-eti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10417?size=xsmall",
+          "32x32": "https://cisco-eti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10417?size=medium"
+        }
+      },
+      "assignee": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/user?accountId=639b61827145571a7ea89794",
+        "accountId": "639b61827145571a7ea89794",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/7e9782aa7c44a7e923fba782af76ca66?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FEU-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/7e9782aa7c44a7e923fba782af76ca66?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FEU-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/7e9782aa7c44a7e923fba782af76ca66?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FEU-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/7e9782aa7c44a7e923fba782af76ca66?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FEU-1.png"
+        },
+        "displayName": "ETI SRE Generic User",
+        "active": true,
+        "timeZone": "Etc/GMT",
+        "accountType": "atlassian"
+      },
+      "priority": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/priority/10001",
+        "iconUrl": "https://cisco-eti.atlassian.net/images/icons/priorities/high.svg",
+        "name": "P3",
+        "id": "10001"
+      },
+      "status": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/status/10007",
+        "description": "",
+        "iconUrl": "https://cisco-eti.atlassian.net/",
+        "name": "Backlog",
+        "id": "10007",
+        "statusCategory": {
+          "self": "https://cisco-eti.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "To Do"
+        }
+      }
+    }
+  },
+  "eventType": "primaryAction"
+}

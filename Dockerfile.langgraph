@@ -1,0 +1,27 @@
+FROM langchain/langgraph-api:3.12
+
+ENV PYTHONPATH=./app/src
+
+# -- Installing local requirements --
+ADD requirements.txt /deps/__outer_jarvis-agent/src/requirements.txt
+RUN PYTHONDONTWRITEBYTECODE=1 pip install --no-cache-dir -c /api/constraints.txt -r /deps/__outer_jarvis-agent/src/requirements.txt
+# -- End of local requirements install --
+
+# -- Adding non-package dependency jarvis-agent --
+ADD . /deps/__outer_jarvis-agent/src
+RUN set -ex && \
+    for line in '[project]' \
+                'name = "jarvis-agent"' \
+                'version = "0.1"' \
+                '[tool.setuptools.package-data]' \
+                '"*" = ["**/*"]'; do \
+        echo "$line" >> /deps/__outer_jarvis-agent/pyproject.toml; \
+    done
+# -- End of non-package dependency jarvis-agent --
+
+# -- Installing all local dependencies --
+RUN PYTHONDONTWRITEBYTECODE=1 pip install --no-cache-dir -c /api/constraints.txt -e /deps/*
+# -- End of local dependencies install --
+ENV LANGSERVE_GRAPHS='{"JARVIS": "build_langgraph:graph"}'
+
+WORKDIR /deps/__outer_jarvis-agent/src

@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "ref": {
+      "name": "io.cnoe.multiagent.jarvis",
+      "version": "0.0.1"
+    },
+    "description": "Jarvis Multi-Agent System",
+  },
+  "specs": {
+    "capabilities": {
+      "threads": false,
+      "interrupts": false,
+      "callbacks": false
+    },
+    "input": {
+      "$defs": {
+        "Message": {
+          "properties": {
+            "type": {
+              "$ref": "#/$defs/Type",
+              "description": "indicates the originator of the message, a human or an assistant"
+            },
+            "content": {
+              "description": "the content of the message",
+              "title": "Content",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "content"
+          ],
+          "title": "Message",
+          "type": "object"
+        },
+        "Type": {
+          "enum": [
+            "human",
+            "assistant",
+            "ai"
+          ],
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "properties": {
+        "messages": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Message"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Messages"
+        },
+        "is_completed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Is Completed"
+        }
+      },
+      "title": "AgentState",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "Message": {
+          "properties": {
+            "type": {
+              "$ref": "#/$defs/Type",
+              "description": "indicates the originator of the message, a human or an assistant"
+            },
+            "content": {
+              "description": "the content of the message",
+              "title": "Content",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "content"
+          ],
+          "title": "Message",
+          "type": "object"
+        },
+        "Type": {
+          "enum": [
+            "human",
+            "assistant",
+            "ai"
+          ],
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "properties": {
+        "messages": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Message"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Messages"
+        },
+        "is_completed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Is Completed"
+        },
+        "final_response": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Final response produced by Jarvis",
+          "title": "Final Response"
+        }
+      },
+      "title": "OutputState",
+      "type": "object"
+    },
+    "config": {
+      "properties": {
+        "test": {
+          "title": "Test",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "test"
+      ],
+      "title": "ConfigSchema",
+      "type": "object"
+    }
+  },
+  "deployment": {
+    "deployment_options": [
+      {
+        "type": "source_code",
+        "name": "source_code_local",
+        "url": ".",
+        "framework_config": {
+          "framework_type": "langgraph",
+          "graph": "jarvis_agent.build_langgraph:graph"
+        }
+      }
+    ],
+    "env_vars": [
+      {
+        "desc": "API key for the AI Gateway service",
+        "name": "AIGATEWAY_API_KEY"
+      },
+      {
+        "desc": "Project server URL for the AI Gateway service",
+        "name": "AIGATEWAY_PROJECT_SERVER_URL"
+      },
+      {
+        "desc": "Server URL for the AI Gateway service",
+        "name": "AIGATEWAY_SERVER_URL"
+      },
+      {
+        "desc": "Access key ID for AWS",
+        "name": "AWS_ACCESS_KEY_ID"
+      },
+      {
+        "desc": "Secret access key for AWS",
+        "name": "AWS_SECRET_ACCESS_KEY"
+      },
+      {
+        "desc": "Azure key for the OpenAI service",
+        "name": "AZURE_OPENAI_API_KEY"
+      },
+      {
+        "desc": "API version GPT4O for Azure OpenAI service",
+        "name": "AZURE_OPENAI_API_VERSION_GPT4O"
+      },
+      {
+        "desc": "API version GPT4O Mini for Azure OpenAI service",
+        "name": "AZURE_OPENAI_API_VERSION_GPT4O_MINI"
+      },
+      {
+        "desc": "API version GPT_4O for Azure OpenAI service",
+        "name": "AZURE_OPENAI_API_VERSION_GPT_4O"
+      },
+      {
+        "desc": "API version GPT_4O Mini for Azure OpenAI service",
+        "name": "AZURE_OPENAI_API_VERSION_GPT_4O_MINI"
+      },
+      {
+        "desc": "API version GPT_O1 for Azure OpenAI service",
+        "name": "AZURE_OPENAI_API_VERSION_GPT_O1"
+      },
+      {
+        "desc": "API version GPT_O1 Mini for Azure OpenAI service",
+        "name": "AZURE_OPENAI_API_VERSION_GPT_O1_MINI"
+      },
+      {
+        "desc": "Deployment GPT4O for Azure OpenAI service",
+        "name": "AZURE_OPENAI_DEPLOYMENT_GPT4O"
+      },
+      {
+        "desc": "Deployment GPT4O Mini for Azure OpenAI service",
+        "name": "AZURE_OPENAI_DEPLOYMENT_GPT4O_MINI"
+      },
+      {
+        "desc": "Deployment GPT_4O for Azure OpenAI service",
+        "name": "AZURE_OPENAI_DEPLOYMENT_GPT_4O"
+      },
+      {
+        "desc": "Deployment GPT_4O Mini for Azure OpenAI service",
+        "name": "AZURE_OPENAI_DEPLOYMENT_GPT_4O_MINI"
+      },
+      {
+        "desc": "Deployment GPT_O1 for Azure OpenAI service",
+        "name": "AZURE_OPENAI_DEPLOYMENT_GPT_O1"
+      },
+      {
+        "desc": "Deployment GPT_O1 Mini for Azure OpenAI service",
+        "name": "AZURE_OPENAI_DEPLOYMENT_GPT_O1_MINI"
+      },
+      {
+        "desc": "Azure endpoint for the OpenAI service",
+        "name": "AZURE_OPENAI_ENDPOINT"
+      },
+      {
+        "desc": "API token for Backstage",
+        "name": "BACKSTAGE_API_TOKEN"
+      },
+      {
+        "desc": "URL for Backstage",
+        "name": "BACKSTAGE_URL"
+      },
+      {
+        "desc": "URI for the database",
+        "name": "DB_URI"
+      },
+      {
+        "desc": "Enablement flag for knowledge graph",
+        "name": "ENABLE_KNOWLEDGE_GRAPH"
+      },
+      {
+        "desc": "API token for ETI Demo Lab",
+        "name": "ETI_DEMO_LAB_API_TOKEN"
+      },
+      {
+        "desc": "Token for GitHub",
+        "name": "GITHUB_TOKEN"
+      },
+      {
+        "desc": "Address for the graph database",
+        "name": "GRAPH_DB_ADDR"
+      },
+      {
+        "desc": "Password for the graph database",
+        "name": "GRAPH_DB_PASSWORD"
+      },
+      {
+        "desc": "Username for the graph database",
+        "name": "GRAPH_DB_USERNAME"
+      },
+      {
+        "desc": "Dry-run flag for Jarvis",
+        "name": "JARVIS_DRYRUN"
+      },
+      {
+        "desc": "Global session timeout for Jarvis",
+        "name": "JARVIS_GLOBAL_SESSION_TIMEOUT"
+      },
+      {
+        "desc": "LLM model name for Jarvis",
+        "name": "JARVIS_LLM_MODEL_NAME"
+      },
+      {
+        "desc": "Access token for JIRA",
+        "name": "JIRA_ACCESS_TOKEN"
+      },
+      {
+        "desc": "Server URL for JIRA",
+        "name": "JIRA_SERVER"
+      },
+      {
+        "desc": "User email for JIRA",
+        "name": "JIRA_USER_EMAIL"
+      },
+      {
+        "desc": "Token for K8S Motific",
+        "name": "K8S_MOTIFIC_TOKEN"
+      },
+      {
+        "desc": "URL for K8S Motific",
+        "name": "K8S_MOTIFIC_URL"
+      },
+      {
+        "desc": "API key for Komodor",
+        "name": "KOMODOR_API_KEY"
+      },
+      {
+        "desc": "API key for Langchain",
+        "name": "LANGCHAIN_API_KEY"
+      },
+      {
+        "desc": "Endpoint for Langchain",
+        "name": "LANGCHAIN_ENDPOINT"
+      },
+      {
+        "desc": "Project identifier for Langchain",
+        "name": "LANGCHAIN_PROJECT"
+      },
+      {
+        "desc": "Tracing V2 flag for Langchain",
+        "name": "LANGCHAIN_TRACING_V2"
+      },
+      {
+        "desc": "Memory saver for Langgraph checkpoint",
+        "name": "LANGGRAPH_CHECKPOINT_MEMORY_SAVER"
+      },
+      {
+        "desc": "SQLite3 path for Langgraph checkpoint",
+        "name": "LANGGRAPH_CHECKPOINT_SQLITE3_PATH"
+      },
+      {
+        "desc": "Tenant ID for Motific",
+        "name": "MOTIFIC_TENANT_ID"
+      },
+      {
+        "desc": "Base64-encoded private key for Ostinato",
+        "name": "OSTINATO_PRIVATE_KEY_BASE64"
+      },
+      {
+        "desc": "API token for PagerDuty",
+        "name": "PAGERDUTY_API_TOKEN"
+      },
+      {
+        "desc": "Token for Platform Motific",
+        "name": "PLATFORM_MOTIFIC_TOKEN"
+      },
+      {
+        "desc": "URL for Platform Motific",
+        "name": "PLATFORM_MOTIFIC_URL"
+      },
+      {
+        "desc": "Name of the target cluster",
+        "name": "TARGET_CLUSTER_NAME"
+      },
+      {
+        "desc": "Region of the target cluster",
+        "name": "TARGET_CLUSTER_REGION"
+      },
+      {
+        "desc": "Access token for Webex",
+        "name": "WEBEX_ACCESS_TOKEN"
+      },
+      {
+        "desc": "Recipient email for Webex",
+        "name": "WEBEX_RECIPIENT_EMAIL"
+      },
+      {
+        "desc": "Room ID for Webex",
+        "name": "WEBEX_ROOM_ID"
+      }
+    ],
+    "dependencies": []
+  }
+}

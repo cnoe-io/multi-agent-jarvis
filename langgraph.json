@@ -1,0 +1,13 @@
+{
+  "dockerfile_lines": [
+    "ENV PYTHONPATH=./jarvis_agent"
+  ],
+  "graphs": {
+    "JARVIS": "multi_agent_jarvis.graph:graph"
+  },
+  "env": "./.env",
+  "python_version": "3.12",
+  "dependencies": [
+    "."
+  ]
+}

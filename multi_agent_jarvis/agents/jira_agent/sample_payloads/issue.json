@@ -1,0 +1,442 @@
+{
+  "timestamp": 1739447903470,
+  "webhookEvent": "jira:issue_updated",
+  "issue_event_type_name": "issue_assigned",
+  "user": {
+    "self": "https://cisco-eti.atlassian.net/rest/api/2/user?accountId=633e134d748d1bfcb85c0548",
+    "accountId": "633e134d748d1bfcb85c0548",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png"
+    },
+    "displayName": "Sri Aradhyula",
+    "active": true,
+    "timeZone": "Etc/GMT",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "236202",
+    "self": "https://cisco-eti.atlassian.net/rest/api/2/236202",
+    "key": "JARVISDEV-1",
+    "fields": {
+      "customfield_10194": null,
+      "customfield_10196": null,
+      "customfield_10197": null,
+      "customfield_10198": null,
+      "resolution": null,
+      "lastViewed": "2025-02-13T11:58:22.872+0000",
+      "customfield_10180": "",
+      "customfield_10181": 0.0,
+      "customfield_10182": null,
+      "customfield_10183": null,
+      "customfield_10184": null,
+      "customfield_10185": null,
+      "customfield_10741": null,
+      "labels": [],
+      "customfield_10612": null,
+      "aggregatetimeoriginalestimate": null,
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/user?accountId=639b61827145571a7ea89794",
+        "accountId": "639b61827145571a7ea89794",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/7e9782aa7c44a7e923fba782af76ca66?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FEU-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/7e9782aa7c44a7e923fba782af76ca66?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FEU-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/7e9782aa7c44a7e923fba782af76ca66?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FEU-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/7e9782aa7c44a7e923fba782af76ca66?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FEU-1.png"
+        },
+        "displayName": "ETI SRE Generic User",
+        "active": true,
+        "timeZone": "Etc/GMT",
+        "accountType": "atlassian"
+      },
+      "components": [],
+      "customfield_10171": null,
+      "customfield_10726": null,
+      "subtasks": [],
+      "customfield_10160": null,
+      "customfield_10161": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10168",
+        "value": "New Feature",
+        "id": "10168"
+      },
+      "customfield_10162": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10273",
+        "value": "Enrichment",
+        "id": "10273"
+      },
+      "reporter": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/user?accountId=633e134d748d1bfcb85c0548",
+        "accountId": "633e134d748d1bfcb85c0548",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png"
+        },
+        "displayName": "Sri Aradhyula",
+        "active": true,
+        "timeZone": "Etc/GMT",
+        "accountType": "atlassian"
+      },
+      "customfield_11014": null,
+      "customfield_11015": null,
+      "customfield_10159": [
+        {
+          "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10153",
+          "value": "All (OS independent)",
+          "id": "10153"
+        }
+      ],
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/issue/JARVISDEV-1/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "issuetype": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/issuetype/10002",
+        "id": "10002",
+        "description": "A task that needs to be done.",
+        "iconUrl": "https://cisco-eti.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "hierarchyLevel": 0
+      },
+      "customfield_10270": null,
+      "customfield_10271": null,
+      "customfield_10150": null,
+      "customfield_10030": null,
+      "customfield_10272": null,
+      "customfield_10151": [
+        {
+          "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10140",
+          "value": "All (Browser independent)",
+          "id": "10140"
+        }
+      ],
+      "customfield_11120": null,
+      "customfield_10273": null,
+      "project": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/project/10659",
+        "id": "10659",
+        "key": "JARVISDEV",
+        "name": "Jarvis Development",
+        "projectTypeKey": "software",
+        "simplified": false,
+        "avatarUrls": {
+          "48x48": "https://cisco-eti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10417",
+          "24x24": "https://cisco-eti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10417?size=small",
+          "16x16": "https://cisco-eti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10417?size=xsmall",
+          "32x32": "https://cisco-eti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10417?size=medium"
+        }
+      },
+      "customfield_10153": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10179",
+        "value": "P3",
+        "id": "10179"
+      },
+      "customfield_10032": null,
+      "customfield_10274": null,
+      "customfield_10275": null,
+      "customfield_10033": null,
+      "customfield_10034": null,
+      "customfield_10276": null,
+      "customfield_10156": "Review process is ensured by repository configurations. Reviewers and their comments can be found looking at the pull request in GitHub. \r\n** Please add names of reviewers here **",
+      "customfield_10035": null,
+      "customfield_10269": null,
+      "customfield_10027": null,
+      "customfield_10028": null,
+      "customfield_11238": null,
+      "customfield_10029": null,
+      "customfield_11119": null,
+      "customfield_10702": null,
+      "resolutiondate": null,
+      "watches": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/issue/JARVISDEV-1/watchers",
+        "watchCount": 1,
+        "isWatching": true
+      },
+      "customfield_10380": null,
+      "customfield_10381": null,
+      "customfield_10382": null,
+      "customfield_10020": null,
+      "customfield_10141": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10171",
+        "value": "Fixed",
+        "id": "10171"
+      },
+      "customfield_10021": null,
+      "customfield_10143": "https://engci-sonar-gpk.cisco.com/sonar/project/issues?id=DarkPhoenix_Application",
+      "customfield_10022": null,
+      "customfield_10023": null,
+      "customfield_10145": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10176",
+        "value": "Clear",
+        "id": "10176"
+      },
+      "customfield_10146": [
+        {
+          "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10193",
+          "value": "Funding",
+          "id": "10193"
+        }
+      ],
+      "customfield_10025": null,
+      "customfield_10147": "** Please add names of unit tests here **",
+      "customfield_10268": null,
+      "customfield_10016": null,
+      "customfield_10379": null,
+      "customfield_10017": null,
+      "customfield_10018": [],
+      "customfield_10139": null,
+      "customfield_10019": null,
+      "updated": "2025-02-13T11:58:23.470+0000",
+      "timeoriginalestimate": null,
+      "description": "repo name: sri-test-02122025",
+      "customfield_10010": null,
+      "customfield_10374": null,
+      "customfield_10011": null,
+      "customfield_10133": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10165",
+        "value": "Green",
+        "id": "10165"
+      },
+      "customfield_10012": null,
+      "customfield_10375": null,
+      "customfield_11222": null,
+      "customfield_10134": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10701",
+        "value": "Minor",
+        "id": "10701"
+      },
+      "customfield_10376": null,
+      "customfield_11223": null,
+      "customfield_10377": null,
+      "customfield_10135": [
+        {
+          "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10199",
+          "value": "4.0",
+          "id": "10199"
+        }
+      ],
+      "timetracking": {},
+      "customfield_10136": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10161",
+        "value": "Alle",
+        "id": "10161"
+      },
+      "customfield_10378": null,
+      "customfield_10015": null,
+      "customfield_10126": null,
+      "customfield_11336": null,
+      "customfield_10006": null,
+      "customfield_10007": {
+        "hasEpicLinkFieldDependency": false,
+        "showField": false,
+        "nonEditableReason": {
+          "reason": "EPIC_LINK_SHOULD_BE_USED",
+          "message": "To set an epic as the parent, use the epic link instead"
+        }
+      },
+      "customfield_10008": null,
+      "customfield_10129": null,
+      "customfield_10800": null,
+      "customfield_10009": "0|i0ezbg:",
+      "customfield_10801": null,
+      "customfield_10802": null,
+      "customfield_10803": null,
+      "summary": "Create a new git repo",
+      "customfield_10120": null,
+      "customfield_10000": "{}",
+      "customfield_11210": null,
+      "customfield_10121": null,
+      "customfield_10122": null,
+      "customfield_11211": null,
+      "customfield_10001": null,
+      "customfield_11333": null,
+      "customfield_11332": null,
+      "customfield_10123": null,
+      "customfield_10002": [],
+      "customfield_10124": null,
+      "customfield_10125": null,
+      "customfield_10357": null,
+      "customfield_10116": null,
+      "customfield_10358": null,
+      "customfield_10117": null,
+      "customfield_10359": null,
+      "environment": null,
+      "customfield_10119": null,
+      "customfield_11209": null,
+      "duedate": null,
+      "statuscategorychangedate": "2025-02-12T11:28:35.320+0000",
+      "customfield_10350": null,
+      "customfield_10351": null,
+      "fixVersions": [],
+      "customfield_10110": null,
+      "customfield_10352": null,
+      "customfield_10111": null,
+      "customfield_10353": null,
+      "customfield_10232": "",
+      "customfield_10112": null,
+      "customfield_10354": null,
+      "customfield_10113": null,
+      "customfield_10355": null,
+      "customfield_10114": null,
+      "customfield_10356": null,
+      "customfield_10104": null,
+      "customfield_10346": 0.0,
+      "customfield_10105": null,
+      "customfield_10347": 1.0,
+      "customfield_10348": null,
+      "customfield_10106": [],
+      "customfield_10349": null,
+      "customfield_11318": null,
+      "customfield_10108": null,
+      "customfield_10909": null,
+      "priority": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/priority/10001",
+        "iconUrl": "https://cisco-eti.atlassian.net/images/icons/priorities/high.svg",
+        "name": "P3",
+        "id": "10001"
+      },
+      "customfield_10100": null,
+      "customfield_10101": null,
+      "customfield_10343": 0.0,
+      "customfield_10102": null,
+      "customfield_10344": 4.0,
+      "customfield_10345": 0.0,
+      "customfield_10103": null,
+      "timeestimate": null,
+      "versions": [],
+      "status": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/status/10007",
+        "description": "",
+        "iconUrl": "https://cisco-eti.atlassian.net/",
+        "name": "Backlog",
+        "id": "10007",
+        "statusCategory": {
+          "self": "https://cisco-eti.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      },
+      "customfield_10571": null,
+      "customfield_10451": null,
+      "customfield_10693": null,
+      "customfield_10452": null,
+      "customfield_10453": null,
+      "customfield_10566": null,
+      "customfield_10445": null,
+      "customfield_10203": null,
+      "customfield_10567": null,
+      "customfield_10446": null,
+      "customfield_10447": null,
+      "customfield_10568": null,
+      "customfield_10569": null,
+      "customfield_10448": null,
+      "aggregatetimeestimate": null,
+      "creator": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/user?accountId=633e134d748d1bfcb85c0548",
+        "accountId": "633e134d748d1bfcb85c0548",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/SA-3.png"
+        },
+        "displayName": "Sri Aradhyula",
+        "active": true,
+        "timeZone": "Etc/GMT",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "customfield_10440": {
+        "self": "https://cisco-eti.atlassian.net/rest/api/2/customFieldOption/10708",
+        "value": "Priority 1 : High",
+        "id": "10708"
+      },
+      "customfield_10562": null,
+      "customfield_10200": null,
+      "customfield_10442": null,
+      "customfield_10563": null,
+      "customfield_10564": null,
+      "customfield_10202": null,
+      "customfield_10565": null,
+      "customfield_10798": null,
+      "customfield_10799": null,
+      "customfield_10437": null,
+      "customfield_10558": null,
+      "customfield_10438": null,
+      "customfield_10559": null,
+      "customfield_10317": null,
+      "customfield_10318": null,
+      "timespent": null,
+      "customfield_11084": null,
+      "aggregatetimespent": null,
+      "customfield_10794": null,
+      "customfield_10786": null,
+      "customfield_11997": null,
+      "customfield_10787": null,
+      "customfield_10788": null,
+      "workratio": -1,
+      "created": "2025-02-12T11:28:34.798+0000",
+      "customfield_10785": null,
+      "customfield_10896": null,
+      "customfield_11180": null,
+      "customfield_11061": null,
+      "customfield_12030": null,
+      "customfield_10890": null,
+      "customfield_10891": null,
+      "customfield_10892": null,
+      "customfield_10893": null,
+      "customfield_10894": null,
+      "customfield_10895": null,
+      "customfield_10885": null,
+      "customfield_10886": null,
+      "customfield_10403": null,
+      "customfield_10887": null,
+      "security": null,
+      "customfield_10404": null,
+      "customfield_10888": null,
+      "attachment": [],
+      "customfield_10889": null,
+      "customfield_10405": null,
+      "customfield_10407": null,
+      "customfield_10880": null,
+      "customfield_10881": null,
+      "customfield_10882": null,
+      "customfield_10883": null,
+      "customfield_10884": null,
+      "customfield_10878": null,
+      "customfield_10879": null
+    }
+  },
+  "changelog": {
+    "id": "1324101",
+    "items": [
+      {
+        "field": "assignee",
+        "fieldtype": "jira",
+        "fieldId": "assignee",
+        "from": null,
+        "fromString": null,
+        "to": "639b61827145571a7ea89794",
+        "toString": "ETI SRE Generic User",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "639b61827145571a7ea89794"
+      }
+    ]
+  }
+}

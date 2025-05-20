@@ -1,0 +1,279 @@
+tests:
+  what_can_you_do_agent_1:
+    input: |
+      what can you do?
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;what_can_you_do_agent
+    metadata:
+      comments: |
+        Jarvis Help Query
+
+  argocd_agent_1:
+    input: |
+      deploy an application
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;argocd_agent;reflection_agent
+    metadata:
+      comments: |
+        Deploy ArgoCD application
+
+  rag_agent_1:
+    input: |
+      how can I get access to aws duo-sso?
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;rag_agent;rag_tools;rag_agent;reflection_agent
+    metadata:
+      comments: |
+        Platform Docs Query
+
+  rag_agent_2:
+      input: |
+        how can get access to duo-sso setup
+      reference_trajectory:
+        solution_1: __start__;supervisor_agent;rag_agent;rag_tools;rag_agent;reflection_agent
+      metadata:
+        comments: |
+          Platform Docs Query
+
+  rag_agent_3:
+      input: |
+        how can I get aws cli access
+      reference_trajectory:
+        solution_1: __start__;supervisor_agent;rag_agent;rag_tools;rag_agent;reflection_agent
+      metadata:
+        comments: |
+          Platform Docs Query
+
+  rag_agent_4:
+      input: |
+        how can I setup aws access
+      reference_trajectory:
+        solution_1: __start__;supervisor_agent;rag_agent;rag_tools;rag_agent;reflection_agent
+      metadata:
+        comments: |
+          Platform Docs Query
+
+  rag_agent_5:
+      input: |
+        how do I get aws cli access
+      reference_trajectory:
+        solution_1: __start__;supervisor_agent;rag_agent;rag_tools;rag_agent;reflection_agent
+      metadata:
+        comments: |
+          Platform Docs Query
+
+  rag_agent_6:
+      input: |
+        In need info on aws cli access
+      reference_trajectory:
+        solution_1: __start__;supervisor_agent;rag_agent;rag_tools;rag_agent;reflection_agent
+      metadata:
+        comments: |
+          Platform Docs Query
+  baseapps_1:
+    input: |
+      give me the latest version of baseapps
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;self_service_agent;self_service_tools;self_service_agent;reflection_agent
+    metadata:
+      comments: |
+        Baseapps Configurator
+
+  knowledge_base_1:
+    input: |
+      how many aws accounts are there
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;self_service_agent;self_service_tools;self_service_agent;reflection_agent
+    metadata:
+      comments: |
+        Knowledge base Query
+
+  knowledge_base_2:
+    input: |
+      which ad groups are used in common-dev AWS account
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;self_service_agent;self_service_tools;self_service_agent;reflection_agent
+    metadata:
+      comments: |
+        Knowledge base Query
+
+  knowledge_base_3:
+    input: |
+      how many dev aws accounts are there?
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;self_service_agent;self_service_tools;self_service_agent;reflection_agent
+    metadata:
+      comments: |
+        Knowledge base Query
+
+  knowledge_base_4:
+    input: |
+      what ad groups give access to aws account commont-dev?
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;self_service_agent;self_service_tools;self_service_agent;reflection_agent
+    metadata:
+      comments: |
+        Knowledge base Query
+
+  knowledge_base_5:
+    input: |
+      how many argo applications are there?
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;self_service_agent;self_service_tools;self_service_agent;reflection_agent
+    metadata:
+      comments: |
+        Knowledge base Query
+
+  knowledge_base_6:
+    input: |
+      what runon tenant is the aws account common-dev in?
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;self_service_agent;self_service_tools;self_service_agent;reflection_agent
+    metadata:
+      comments: |
+        Knowledge base Query
+
+  knowledge_base_7:
+    input: |
+      what aws account is related to k8s cluster eks-gitops-1
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;self_service_agent;self_service_tools;self_service_agent;reflection_agent
+    metadata:
+      comments: |
+        Knowledge base Query
+
+  pagerduty_agent_1:
+    input: |
+      who is on sre oncall?
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;pagerduty_agent;pagerduty_tools;pagerduty_agent;reflection_agent
+    metadata:
+      comments: |
+        Pagerduty Query
+
+  jira_agent_1:
+    input: |
+      find my latest jiras
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;jira_agent;reflection_agent
+    metadata:
+      comments: |
+        [Negative test-case] Find my latest Jira, LLM is looking for more user input
+
+  jira_agent_2:
+    input: |
+      find my latest jiras in SRE project asked by user@example.com
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;jira_agent;jira_tools;jira_agent;jira_tools;jira_agent;reflection_agent
+      solution_2: __start__;supervisor_agent;jira_agent;jira_tools;jira_agent;reflection_agent
+    metadata:
+      comments: |
+        Find my latest Jira asked by specific user
+
+  jira_agent_3:
+    input: |
+      get jira account id for user@example.com
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;jira_agent;jira_tools;jira_agent;reflection_agent
+    metadata:
+      comments: |
+        Get Jira account id
+
+  jira_agent_4:
+    input: |
+      get jiras with label venture-platform-ask in last 30 days for assignee user@example.com asked by user@example.com
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;jira_agent;jira_tools;jira_agent;jira_tools;jira_agent;reflection_agent
+    metadata:
+      comments: |
+        Search Jira in specific project
+
+  jira_agent_5:
+    input: |
+      who is on sre oncall and find their latest jiras?
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;pagerduty_agent;pagerduty_tools;pagerduty_agent;reflection_agent;supervisor_agent;jira_agent;jira_tools;jira_agent;jira_tools;jira_agent;reflection_agent
+      solution_2: __start__;supervisor_agent;pagerduty_agent;pagerduty_tools;pagerduty_agent;reflection_agent;supervisor_agent;jira_agent;jira_tools;jira_agent;reflection_agent
+    metadata:
+      comments: |
+        Complex PagerDuty and Jira questions, User Service Desk jiras
+
+  ai_gateway_agent_1:
+    input: |
+      get llm keys for provider azure openai, model gpt-4o, project poirot asked by user@example.com
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;ai_gateway_agent;ai_gateway_tools;ai_gateway_agent;reflection_agent
+    metadata:
+      comments: |
+        AI Gateway LLM Access
+
+  ai_gateway_agent_2:
+    input: |
+      get llm access
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;ai_gateway_agent;reflection_agent
+    metadata:
+      comments: |
+        AI Gateway LLM Access input params
+  backstage_agent_1:
+    input: |
+      Fetch backstage catalog entries for user user@example.com
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;backstage_agent;backstage_tools;backstage_agent;reflection_agent
+    metadata:
+      comments: |
+        Fetch backstage catalog entries for user
+
+  backstage_agent_2:
+    input: |
+      Fetch the list of Backstage groups for user user@example.com
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;backstage_agent;backstage_tools;backstage_agent;reflection_agent
+    metadata:
+      comments: |
+        Fetches the list of Backstage groups for user
+
+  backstage_agent_3:
+    input: |
+      Fetches the projects owned by user@example.com
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;backstage_agent;backstage_tools;backstage_agent;reflection_agent
+    metadata:
+      comments: |
+        Fetches the projects owned by user
+
+  github_agent_1:
+    input: |
+      get repo description for agent-argocd in cnoe-io org
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;github_agent;github_tools;github_agent;reflection_agent
+    metadata:
+      comments: |
+        Get repo description
+
+  github_agent_2:
+    input: |
+      get repo topics for agent-argocd in cnoe-io org
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;github_agent;github_tools;github_agent;reflection_agent
+    metadata:
+      comments: |
+        Get repo topics
+
+  github_agent_3:
+    input: |
+      get pr 2 details for agent-argocd in cnoe-io org
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;github_agent;github_tools;github_agent;reflection_agent
+    metadata:
+      comments: |
+        Get PR details
+
+  github_agent_4:
+    input: |
+      list prs for agent-argocd in cnoe-io org
+    reference_trajectory:
+      solution_1: __start__;supervisor_agent;github_agent;github_tools;github_agent;reflection_agent
+    metadata:
+      comments: |
+        List PRs
