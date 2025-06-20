@@ -1,20 +1,7 @@
-# 🚀 Jarvis Multi-Agent System
 
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue?logo=python)](https://www.python.org/)
-[![Poetry](https://img.shields.io/badge/poetry-1.0%2B-blueviolet?logo=python)](https://python-poetry.org/)
-[![License](https://img.shields.io/badge/license-Apache%202.0-green)](LICENSE)
+#❗❗❗This repo is archived in favor of [https://github.com/cnoe-io/ai-platform-engineering](https://github.com/cnoe-io/ai-platform-engineering)
 
-[![Conventional Commits](https://github.com/cnoe-io/openapi-mcp-codegen/actions/workflows/conventional_commits.yml/badge.svg)](https://github.com/cnoe-io/openapi-mcp-codegen/actions/workflows/conventional_commits.yml)
-[![Ruff Linter](https://github.com/cnoe-io/openapi-mcp-codegen/actions/workflows/ruff.yml/badge.svg)](https://github.com/cnoe-io/openapi-mcp-codegen/actions/workflows/ruff.yml)
-[![Super Linter](https://github.com/cnoe-io/openapi-mcp-codegen/actions/workflows/superlinter.yml/badge.svg)](https://github.com/cnoe-io/openapi-mcp-codegen/actions/workflows/superlinter.yml)
-
----
-
-## 🧪 Evaluation Badges
-
-| Claude | Gemini | OpenAI | Llama |
-|--------|--------|--------|-------|
-| [![Claude Evals](https://github.com/cnoe-io/agent-argocd/actions/workflows/claude-evals.yml/badge.svg)](https://github.com/cnoe-io/agent-argocd/actions/workflows/claude-evals.yml) | [![Gemini Evals](https://github.com/cnoe-io/agent-argocd/actions/workflows/gemini-evals.yml/badge.svg)](https://github.com/cnoe-io/agent-argocd/actions/workflows/gemini-evals.yml) | [![OpenAI Evals](https://github.com/cnoe-io/agent-argocd/actions/workflows/openai-evals.yml/badge.svg)](https://github.com/cnoe-io/agent-argocd/actions/workflows/openai-evals.yml) | [![Llama Evals](https://github.com/cnoe-io/agent-argocd/actions/workflows/openai-evals.yml/badge.svg)](https://github.com/cnoe-io/agent-argocd/actions/workflows/openai-evals.yml) |
+## 🚀 Jarvis Multi-Agent System
 
 ---
 
